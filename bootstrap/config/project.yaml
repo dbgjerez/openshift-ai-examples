@@ -3,5 +3,10 @@ kind: AppProject
 metadata:
   name: db-openshift-ia
   namespace: openshift-gitops
-spec: {}
-status: {}
+spec:
+  destinations:
+  - name: in-cluster
+    namespace: '*'
+    server: https://kubernetes.default.svc
+  sourceRepos:
+  - https://github.com/dbgjerez/openshift-ai-examples.git
