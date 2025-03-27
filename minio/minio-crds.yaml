@@ -57,4 +57,16 @@ spec:
     targetPort: 9000
   tls:
     termination: edge
-
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: minio-pvc
+  namespace: minio
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi
+  storageClassName: ""
