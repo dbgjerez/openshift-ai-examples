@@ -48,7 +48,7 @@ spec:
     sch:
       enabled: true
     spaceId: 1234567-abde-1234-abcde-123456789023
-    storageClassName: portworx-sc
+    storageClassName: ""
     zenServiceInstanceId: ''
   keep: false
   livenessProbe:
