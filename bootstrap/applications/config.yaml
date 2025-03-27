@@ -12,3 +12,5 @@ spec:
     path: bootstrap/config
     repoURL: https://github.com/dbgjerez/openshift-ai-examples.git
     targetRevision: feature/installation
+  syncPolicy:
+    automated: {}
