@@ -1,0 +1,16 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: minio
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: minio
+    server: https://kubernetes.default.svc
+  project: db-openshift-ia
+  source:
+    path: minio
+    repoURL: https://github.com/dbgjerez/openshift-ai-examples.git
+    targetRevision: feature/installation
+  syncPolicy:
+    automated: {}
