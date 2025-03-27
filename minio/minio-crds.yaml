@@ -55,3 +55,6 @@ spec:
     name: minio
   port:
     targetPort: 9000
+  tls:
+    termination: edge
+
