@@ -9,8 +9,8 @@ spec:
     server: https://kubernetes.default.svc
   project: db-openshift-ia
   source:
-    path: bootstrap/config
+    path: bootstrap/operators
     repoURL: https://github.com/dbgjerez/openshift-ai-examples.git
-    targetRevision: feature/operators
+    targetRevision: feature/installation
   syncPolicy:
     automated: {}
