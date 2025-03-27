@@ -10,3 +10,6 @@ spec:
     server: https://kubernetes.default.svc
   sourceRepos:
   - https://github.com/dbgjerez/openshift-ai-examples.git
+  clusterResourceWhitelist:
+  - group: '*'
+    kind: '*'
