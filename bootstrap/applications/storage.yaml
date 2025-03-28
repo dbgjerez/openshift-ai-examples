@@ -5,9 +5,9 @@ metadata:
   namespace: openshift-gitops
 spec:
   destination:
-    namespace: openshift-gitops
+    namespace: db-openshift-ai
     server: https://kubernetes.default.svc
-  project: db-openshift-ai
+  project: db-ai
   source:
     path: bootstrap/storage
     repoURL: https://github.com/dbgjerez/openshift-ai-examples.git
