@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: AppProject
 metadata:
-  name: db-openshift-ia
+  name: db-openshift-ai
   namespace: openshift-gitops
 spec:
   destinations:
