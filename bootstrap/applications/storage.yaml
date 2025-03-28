@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   project: db-openshift-ai
   source:
-    path: bootstrap/config
+    path: bootstrap/storage
     repoURL: https://github.com/dbgjerez/openshift-ai-examples.git
     targetRevision: feature/installation
   syncPolicy:
