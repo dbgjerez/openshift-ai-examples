@@ -1,0 +1,8 @@
+apiVersion: objectbucket.io/v1alpha1
+kind: ObjectBucketClaim
+metadata:
+  name: ai-s3
+  namespace: db-openshift-ai
+spec:
+  generateBucketName: ai-s3
+  storageClassName: ocs-storagecluster-ceph-rgw

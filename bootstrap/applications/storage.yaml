@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: db-openshift-ai-storage
+  namespace: openshift-gitops
+spec:
+  destination:
+    namespace: db-openshift-ai
+    server: https://kubernetes.default.svc
+  project: db-ai
+  source:
+    path: bootstrap/storage
+    repoURL: https://github.com/dbgjerez/openshift-ai-examples.git
+    targetRevision: feature/installation
+  syncPolicy:
+    automated: {}
+    syncOptions:
+      - CreateNamespace=true
