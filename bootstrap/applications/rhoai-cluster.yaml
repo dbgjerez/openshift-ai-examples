@@ -10,6 +10,6 @@ spec:
   source:
     path: bootstrap/rhoai
     repoURL: https://github.com/dbgjerez/openshift-ai-examples.git
-    targetRevision: feature/installation
+    targetRevision: main
   syncPolicy:
     automated: {}
